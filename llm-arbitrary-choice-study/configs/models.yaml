@@ -1,0 +1,1344 @@
+# Candidate model list for user selection. Prices are OpenRouter per-token USD values fetched on 2026-05-05 where available.
+# The pilot config uses only default_active models; this file intentionally contains a much larger pool for later runs.
+models:
+- id: openai/gpt-5.5
+  label: GPT-5.5
+  provider: OpenAI
+  origin: US
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 5.0e-06
+  completion_price_per_token: 3.0e-05
+- id: openai/gpt-5.5-pro
+  label: GPT-5.5 Pro
+  provider: OpenAI
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-05
+  completion_price_per_token: 0.00018
+- id: openai/gpt-5.4
+  label: GPT-5.4
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.5e-05
+- id: openai/gpt-5.4-mini
+  label: GPT-5.4 Mini
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.5e-07
+  completion_price_per_token: 4.5e-06
+- id: openai/gpt-5.4-nano
+  label: GPT-5.4 Nano
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-07
+  completion_price_per_token: 1.25e-06
+- id: openai/gpt-5.3-chat
+  label: GPT-5.3 Chat
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.75e-06
+  completion_price_per_token: 1.4e-05
+- id: openai/gpt-5.2
+  label: GPT-5.2
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.75e-06
+  completion_price_per_token: 1.4e-05
+- id: openai/gpt-5.1
+  label: GPT-5.1
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.25e-06
+  completion_price_per_token: 1.0e-05
+- id: openai/gpt-5
+  label: GPT-5
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.25e-06
+  completion_price_per_token: 1.0e-05
+- id: openai/gpt-5-mini
+  label: GPT-5 Mini
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-07
+  completion_price_per_token: 2.0e-06
+- id: openai/gpt-5-nano
+  label: GPT-5 Nano
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-08
+  completion_price_per_token: 4.0e-07
+- id: openai/gpt-4.1
+  label: GPT-4.1
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-06
+  completion_price_per_token: 8.0e-06
+- id: openai/gpt-4.1-mini
+  label: GPT-4.1 Mini
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 1.6e-06
+- id: openai/gpt-4.1-nano
+  label: GPT-4.1 Nano
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 4.0e-07
+- id: openai/gpt-4o
+  label: GPT-4o
+  provider: OpenAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.0e-05
+- id: openai/gpt-4o-mini
+  label: GPT-4o-mini
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 6.0e-07
+- id: openai/gpt-oss-120b
+  label: gpt-oss-120b
+  provider: OpenAI
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.9e-08
+  completion_price_per_token: 1.8e-07
+- id: openai/gpt-oss-20b
+  label: gpt-oss-20b
+  provider: OpenAI
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-08
+  completion_price_per_token: 1.4e-07
+- id: openai/o3
+  label: o3
+  provider: OpenAI
+  origin: US
+  tier: reasoning
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-06
+  completion_price_per_token: 8.0e-06
+- id: openai/o4-mini
+  label: o4 Mini
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.1e-06
+  completion_price_per_token: 4.4e-06
+- id: openai/o3-mini
+  label: o3 Mini
+  provider: OpenAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.1e-06
+  completion_price_per_token: 4.4e-06
+- id: anthropic/claude-opus-4.7
+  label: Claude Opus 4.7
+  provider: Anthropic
+  origin: US
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 5.0e-06
+  completion_price_per_token: 2.5e-05
+- id: anthropic/claude-opus-4.6
+  label: Claude Opus 4.6
+  provider: Anthropic
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-06
+  completion_price_per_token: 2.5e-05
+- id: anthropic/claude-opus-4.5
+  label: Claude Opus 4.5
+  provider: Anthropic
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-06
+  completion_price_per_token: 2.5e-05
+- id: anthropic/claude-opus-4.1
+  label: Claude Opus 4.1
+  provider: Anthropic
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-05
+  completion_price_per_token: 7.5e-05
+- id: anthropic/claude-sonnet-4.6
+  label: Claude Sonnet 4.6
+  provider: Anthropic
+  origin: US
+  tier: mid
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: anthropic/claude-sonnet-4.5
+  label: Claude Sonnet 4.5
+  provider: Anthropic
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: anthropic/claude-sonnet-4
+  label: Claude Sonnet 4
+  provider: Anthropic
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: anthropic/claude-haiku-4.5
+  label: Claude Haiku 4.5
+  provider: Anthropic
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-06
+  completion_price_per_token: 5.0e-06
+- id: anthropic/claude-3.7-sonnet
+  label: Claude 3.7 Sonnet
+  provider: Anthropic
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: anthropic/claude-3.5-haiku
+  label: Claude 3.5 Haiku
+  provider: Anthropic
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 8.0e-07
+  completion_price_per_token: 4.0e-06
+- id: anthropic/claude-3-haiku
+  label: Claude 3 Haiku
+  provider: Anthropic
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-07
+  completion_price_per_token: 1.25e-06
+- id: google/gemini-3.1-pro-preview
+  label: Gemini 3.1 Pro Preview
+  provider: Google
+  origin: US
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 2.0e-06
+  completion_price_per_token: 1.2e-05
+- id: google/gemini-3-flash-preview
+  label: Gemini 3 Flash Preview
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-07
+  completion_price_per_token: 3.0e-06
+- id: google/gemini-3.1-flash-lite-preview
+  label: Gemini 3.1 Flash Lite Preview
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-07
+  completion_price_per_token: 1.5e-06
+- id: google/gemini-2.5-pro
+  label: Gemini 2.5 Pro
+  provider: Google
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.25e-06
+  completion_price_per_token: 1.0e-05
+- id: google/gemini-2.5-flash
+  label: Gemini 2.5 Flash
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-07
+  completion_price_per_token: 2.5e-06
+- id: google/gemini-2.5-flash-lite
+  label: Gemini 2.5 Flash Lite
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 4.0e-07
+- id: google/gemini-2.0-flash-001
+  label: Gemini 2.0 Flash
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 4.0e-07
+- id: google/gemini-2.0-flash-lite-001
+  label: Gemini 2.0 Flash Lite
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.5e-08
+  completion_price_per_token: 3.0e-07
+- id: google/gemma-4-31b-it
+  label: Gemma 4 31B
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.3e-07
+  completion_price_per_token: 3.8e-07
+- id: google/gemma-4-26b-a4b-it
+  label: Gemma 4 26B A4B
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-08
+  completion_price_per_token: 3.3e-07
+- id: google/gemma-3-27b-it
+  label: Gemma 3 27B
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 8.0e-08
+  completion_price_per_token: 1.6e-07
+- id: google/gemma-3-12b-it
+  label: Gemma 3 12B
+  provider: Google
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-08
+  completion_price_per_token: 1.3e-07
+- id: google/gemma-3-4b-it
+  label: Gemma 3 4B
+  provider: Google
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-08
+  completion_price_per_token: 8.0e-08
+- id: x-ai/grok-4.3
+  label: Grok 4.3
+  provider: xAI
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.25e-06
+  completion_price_per_token: 2.5e-06
+- id: x-ai/grok-4.20
+  label: Grok 4.20
+  provider: xAI
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.25e-06
+  completion_price_per_token: 2.5e-06
+- id: x-ai/grok-4.1-fast
+  label: Grok 4.1 Fast
+  provider: xAI
+  origin: US
+  tier: mid
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 2.0e-07
+  completion_price_per_token: 5.0e-07
+- id: x-ai/grok-4-fast
+  label: Grok 4 Fast
+  provider: xAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-07
+  completion_price_per_token: 5.0e-07
+- id: x-ai/grok-4
+  label: Grok 4
+  provider: xAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: x-ai/grok-3
+  label: Grok 3
+  provider: xAI
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: x-ai/grok-3-mini
+  label: Grok 3 Mini
+  provider: xAI
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-07
+  completion_price_per_token: 5.0e-07
+- id: moonshotai/kimi-k2.6
+  label: Kimi K2.6
+  provider: Moonshot AI
+  origin: China
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 7.4e-07
+  completion_price_per_token: 3.49e-06
+- id: moonshotai/kimi-k2-thinking
+  label: Kimi K2 Thinking
+  provider: Moonshot AI
+  origin: China
+  tier: reasoning
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-07
+  completion_price_per_token: 2.5e-06
+- id: moonshotai/kimi-k2.5
+  label: Kimi K2.5
+  provider: Moonshot AI
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.4e-07
+  completion_price_per_token: 2.0e-06
+- id: moonshotai/kimi-k2
+  label: Kimi K2 0711
+  provider: Moonshot AI
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.7e-07
+  completion_price_per_token: 2.3e-06
+- id: deepseek/deepseek-v4-pro
+  label: DeepSeek V4 Pro
+  provider: DeepSeek
+  origin: China
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 4.35e-07
+  completion_price_per_token: 8.7e-07
+- id: deepseek/deepseek-v4-flash
+  label: DeepSeek V4 Flash
+  provider: DeepSeek
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.4e-07
+  completion_price_per_token: 2.8e-07
+- id: deepseek/deepseek-v3.2-speciale
+  label: DeepSeek V3.2 Speciale
+  provider: DeepSeek
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 1.2e-06
+- id: deepseek/deepseek-v3.2
+  label: DeepSeek V3.2
+  provider: DeepSeek
+  origin: China
+  tier: mid
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 2.52e-07
+  completion_price_per_token: 3.78e-07
+- id: deepseek/deepseek-v3.2-exp
+  label: DeepSeek V3.2 Exp
+  provider: DeepSeek
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.7e-07
+  completion_price_per_token: 4.1e-07
+- id: deepseek/deepseek-r1
+  label: R1
+  provider: DeepSeek
+  origin: China
+  tier: reasoning
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.0e-07
+  completion_price_per_token: 2.5e-06
+- id: deepseek/deepseek-r1-0528
+  label: R1 0528
+  provider: DeepSeek
+  origin: China
+  tier: reasoning
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-07
+  completion_price_per_token: 2.15e-06
+- id: deepseek/deepseek-chat-v3.1
+  label: DeepSeek V3.1
+  provider: DeepSeek
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 7.5e-07
+- id: deepseek/deepseek-chat
+  label: DeepSeek V3
+  provider: DeepSeek
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.2e-07
+  completion_price_per_token: 8.9e-07
+- id: minimax/minimax-m2.7
+  label: MiniMax M2.7
+  provider: MiniMax
+  origin: China
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 3.0e-07
+  completion_price_per_token: 1.2e-06
+- id: minimax/minimax-m2.5
+  label: MiniMax M2.5
+  provider: MiniMax
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 1.15e-06
+- id: minimax/minimax-m2
+  label: MiniMax M2
+  provider: MiniMax
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.55e-07
+  completion_price_per_token: 1.0e-06
+- id: minimax/minimax-m1
+  label: MiniMax M1
+  provider: MiniMax
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 2.2e-06
+- id: minimax/minimax-01
+  label: MiniMax-01
+  provider: MiniMax
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-07
+  completion_price_per_token: 1.1e-06
+- id: qwen/qwen3.6-max-preview
+  label: Qwen3.6 Max Preview
+  provider: Alibaba/Qwen
+  origin: China
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 1.04e-06
+  completion_price_per_token: 6.24e-06
+- id: qwen/qwen3.6-plus
+  label: Qwen3.6 Plus
+  provider: Alibaba/Qwen
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.25e-07
+  completion_price_per_token: 1.95e-06
+- id: qwen/qwen3.6-flash
+  label: Qwen3.6 Flash
+  provider: Alibaba/Qwen
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-07
+  completion_price_per_token: 1.5e-06
+- id: qwen/qwen3.5-plus-20260420
+  label: Qwen3.5 Plus 2026-04-20
+  provider: Alibaba/Qwen
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 2.4e-06
+- id: qwen/qwen3-max
+  label: Qwen3 Max
+  provider: Alibaba/Qwen
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.8e-07
+  completion_price_per_token: 3.9e-06
+- id: qwen/qwen3-max-thinking
+  label: Qwen3 Max Thinking
+  provider: Alibaba/Qwen
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.8e-07
+  completion_price_per_token: 3.9e-06
+- id: qwen/qwen3-235b-a22b
+  label: Qwen3 235B A22B
+  provider: Alibaba/Qwen
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.55e-07
+  completion_price_per_token: 1.82e-06
+- id: qwen/qwen3-235b-a22b-thinking-2507
+  label: Qwen3 235B A22B Thinking 2507
+  provider: Alibaba/Qwen
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.495e-07
+  completion_price_per_token: 1.495e-06
+- id: qwen/qwen3-30b-a3b
+  label: Qwen3 30B A3B
+  provider: Alibaba/Qwen
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 9.0e-08
+  completion_price_per_token: 4.5e-07
+- id: qwen/qwen3-32b
+  label: Qwen3 32B
+  provider: Alibaba/Qwen
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 8.0e-08
+  completion_price_per_token: 2.4e-07
+- id: qwen/qwen3-14b
+  label: Qwen3 14B
+  provider: Alibaba/Qwen
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-08
+  completion_price_per_token: 2.4e-07
+- id: qwen/qwen3-8b
+  label: Qwen3 8B
+  provider: Alibaba/Qwen
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-08
+  completion_price_per_token: 4.0e-07
+- id: qwen/qwen-max
+  label: Qwen-Max
+  provider: Alibaba/Qwen
+  origin: China
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.04e-06
+  completion_price_per_token: 4.16e-06
+- id: qwen/qwen-plus
+  label: Qwen-Plus
+  provider: Alibaba/Qwen
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.6e-07
+  completion_price_per_token: 7.8e-07
+- id: qwen/qwen-turbo
+  label: Qwen-Turbo
+  provider: Alibaba/Qwen
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.25e-08
+  completion_price_per_token: 1.3e-07
+- id: z-ai/glm-5.1
+  label: GLM 5.1
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.05e-06
+  completion_price_per_token: 3.5e-06
+- id: z-ai/glm-5
+  label: GLM 5
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-07
+  completion_price_per_token: 2.08e-06
+- id: z-ai/glm-4.7
+  label: GLM 4.7
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.8e-07
+  completion_price_per_token: 1.74e-06
+- id: z-ai/glm-4.7-flash
+  label: GLM 4.7 Flash
+  provider: Z.ai
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-08
+  completion_price_per_token: 4.0e-07
+- id: z-ai/glm-4.6
+  label: GLM 4.6
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.9e-07
+  completion_price_per_token: 1.9e-06
+- id: z-ai/glm-4.5
+  label: GLM 4.5
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-07
+  completion_price_per_token: 2.2e-06
+- id: z-ai/glm-4.5-air
+  label: GLM 4.5 Air
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.3e-07
+  completion_price_per_token: 8.5e-07
+- id: z-ai/glm-4-32b
+  label: GLM 4 32B
+  provider: Z.ai
+  origin: China
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 1.0e-07
+- id: baidu/ernie-4.5-300b-a47b
+  label: ERNIE 4.5 300B A47B
+  provider: Baidu
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.8e-07
+  completion_price_per_token: 1.1e-06
+- id: baidu/ernie-4.5-21b-a3b
+  label: ERNIE 4.5 21B A3B
+  provider: Baidu
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.0e-08
+  completion_price_per_token: 2.8e-07
+- id: baidu/ernie-4.5-21b-a3b-thinking
+  label: ERNIE 4.5 21B A3B Thinking
+  provider: Baidu
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.0e-08
+  completion_price_per_token: 2.8e-07
+- id: tencent/hunyuan-a13b-instruct
+  label: Hunyuan A13B Instruct
+  provider: Tencent
+  origin: China
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.4e-07
+  completion_price_per_token: 5.7e-07
+- id: mistralai/mistral-large-2512
+  label: Mistral Large 3 2512
+  provider: Mistral AI
+  origin: EU
+  tier: flagship
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 5.0e-07
+  completion_price_per_token: 1.5e-06
+- id: mistralai/mistral-medium-3-5
+  label: Mistral Medium 3.5
+  provider: Mistral AI
+  origin: EU
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-06
+  completion_price_per_token: 7.5e-06
+- id: mistralai/mistral-medium-3.1
+  label: Mistral Medium 3.1
+  provider: Mistral AI
+  origin: EU
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 2.0e-06
+- id: mistralai/mistral-small-2603
+  label: Mistral Small 4
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 6.0e-07
+- id: mistralai/mistral-small-3.2-24b-instruct
+  label: Mistral Small 3.2 24B
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 7.5e-08
+  completion_price_per_token: 2.0e-07
+- id: mistralai/mistral-small-3.1-24b-instruct
+  label: Mistral Small 3.1 24B
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.5e-07
+  completion_price_per_token: 5.6e-07
+- id: mistralai/mistral-medium-3
+  label: Mistral Medium 3
+  provider: Mistral AI
+  origin: EU
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 2.0e-06
+- id: mistralai/mistral-saba
+  label: Saba
+  provider: Mistral AI
+  origin: EU
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-07
+  completion_price_per_token: 6.0e-07
+- id: mistralai/mistral-nemo
+  label: Mistral Nemo
+  provider: Mistral AI
+  origin: EU
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-08
+  completion_price_per_token: 3.0e-08
+- id: mistralai/mixtral-8x22b-instruct
+  label: Mixtral 8x22B Instruct
+  provider: Mistral AI
+  origin: EU
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-06
+  completion_price_per_token: 6.0e-06
+- id: mistralai/mixtral-8x7b-instruct
+  label: Mixtral 8x7B Instruct
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.4e-07
+  completion_price_per_token: 5.4e-07
+- id: mistralai/mistral-7b-instruct-v0.1
+  label: Mistral 7B Instruct v0.1
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.1e-07
+  completion_price_per_token: 1.9e-07
+- id: mistralai/ministral-14b-2512
+  label: Ministral 3 14B 2512
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-07
+  completion_price_per_token: 2.0e-07
+- id: mistralai/ministral-8b-2512
+  label: Ministral 3 8B 2512
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 1.5e-07
+- id: mistralai/ministral-3b-2512
+  label: Ministral 3 3B 2512
+  provider: Mistral AI
+  origin: EU
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 1.0e-07
+- id: meta-llama/llama-4-maverick
+  label: Llama 4 Maverick
+  provider: Meta
+  origin: US
+  tier: open
+  default_active: true
+  notes: Initial pilot selection; included to keep the first run affordable and diverse.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 6.0e-07
+- id: meta-llama/llama-4-scout
+  label: Llama 4 Scout
+  provider: Meta
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 8.0e-08
+  completion_price_per_token: 3.0e-07
+- id: meta-llama/llama-3.3-70b-instruct
+  label: Llama 3.3 70B Instruct
+  provider: Meta
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 3.2e-07
+- id: meta-llama/llama-3.1-70b-instruct
+  label: Llama 3.1 70B Instruct
+  provider: Meta
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 4.0e-07
+  completion_price_per_token: 4.0e-07
+- id: meta-llama/llama-3.1-8b-instruct
+  label: Llama 3.1 8B Instruct
+  provider: Meta
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-08
+  completion_price_per_token: 5.0e-08
+- id: meta-llama/llama-3.2-3b-instruct
+  label: Llama 3.2 3B Instruct
+  provider: Meta
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.1e-08
+  completion_price_per_token: 3.4e-07
+- id: meta-llama/llama-3.2-1b-instruct
+  label: Llama 3.2 1B Instruct
+  provider: Meta
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.7e-08
+  completion_price_per_token: 2.0e-07
+- id: amazon/nova-premier-v1
+  label: Nova Premier 1.0
+  provider: Amazon
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.25e-05
+- id: amazon/nova-pro-v1
+  label: Nova Pro 1.0
+  provider: Amazon
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 8.0e-07
+  completion_price_per_token: 3.2e-06
+- id: amazon/nova-lite-v1
+  label: Nova Lite 1.0
+  provider: Amazon
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-08
+  completion_price_per_token: 2.4e-07
+- id: amazon/nova-micro-v1
+  label: Nova Micro 1.0
+  provider: Amazon
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.5e-08
+  completion_price_per_token: 1.4e-07
+- id: amazon/nova-2-lite-v1
+  label: Nova 2 Lite
+  provider: Amazon
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-07
+  completion_price_per_token: 2.5e-06
+- id: microsoft/phi-4
+  label: Phi 4
+  provider: Microsoft
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.5e-08
+  completion_price_per_token: 1.4e-07
+- id: nvidia/nemotron-3-super-120b-a12b
+  label: Nemotron 3 Super
+  provider: NVIDIA
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 9.0e-08
+  completion_price_per_token: 4.5e-07
+- id: nvidia/nemotron-3-nano-30b-a3b
+  label: Nemotron 3 Nano 30B A3B
+  provider: NVIDIA
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-08
+  completion_price_per_token: 2.0e-07
+- id: nvidia/llama-3.3-nemotron-super-49b-v1.5
+  label: Llama 3.3 Nemotron Super 49B V1.5
+  provider: NVIDIA
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 4.0e-07
+- id: ibm-granite/granite-4.1-8b
+  label: Granite 4.1 8B
+  provider: IBM Granite
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 5.0e-08
+  completion_price_per_token: 1.0e-07
+- id: ibm-granite/granite-4.0-h-micro
+  label: Granite 4.0 Micro
+  provider: IBM Granite
+  origin: US
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.7e-08
+  completion_price_per_token: 1.1e-07
+- id: nousresearch/hermes-4-405b
+  label: Hermes 4 405B
+  provider: Nous Research
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-06
+  completion_price_per_token: 3.0e-06
+- id: nousresearch/hermes-4-70b
+  label: Hermes 4 70B
+  provider: Nous Research
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.3e-07
+  completion_price_per_token: 4.0e-07
+- id: nousresearch/hermes-3-llama-3.1-405b
+  label: Hermes 3 405B Instruct
+  provider: Nous Research
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-06
+  completion_price_per_token: 1.0e-06
+- id: nousresearch/hermes-3-llama-3.1-70b
+  label: Hermes 3 70B Instruct
+  provider: Nous Research
+  origin: US
+  tier: open
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-07
+  completion_price_per_token: 3.0e-07
+- id: inception/mercury-2
+  label: Mercury 2
+  provider: Inception Labs
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-07
+  completion_price_per_token: 7.5e-07
+- id: writer/palmyra-x5
+  label: Palmyra X5
+  provider: Writer
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 6.0e-07
+  completion_price_per_token: 6.0e-06
+- id: inflection/inflection-3-productivity
+  label: Inflection 3 Productivity
+  provider: Inflection
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.0e-05
+- id: inflection/inflection-3-pi
+  label: Inflection 3 Pi
+  provider: Inflection
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.0e-05
+- id: perplexity/sonar
+  label: Sonar
+  provider: Perplexity
+  origin: US
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-06
+  completion_price_per_token: 1.0e-06
+- id: perplexity/sonar-pro
+  label: Sonar Pro
+  provider: Perplexity
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-06
+  completion_price_per_token: 1.5e-05
+- id: perplexity/sonar-reasoning-pro
+  label: Sonar Reasoning Pro
+  provider: Perplexity
+  origin: US
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-06
+  completion_price_per_token: 8.0e-06
+- id: cohere/command-a
+  label: Command A
+  provider: Cohere
+  origin: Canada
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.0e-05
+- id: cohere/command-r-plus-08-2024
+  label: Command R+ (08-2024)
+  provider: Cohere
+  origin: Canada
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.5e-06
+  completion_price_per_token: 1.0e-05
+- id: cohere/command-r-08-2024
+  label: Command R (08-2024)
+  provider: Cohere
+  origin: Canada
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.5e-07
+  completion_price_per_token: 6.0e-07
+- id: cohere/command-r7b-12-2024
+  label: Command R7B (12-2024)
+  provider: Cohere
+  origin: Canada
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.75e-08
+  completion_price_per_token: 1.5e-07
+- id: ai21/jamba-large-1.7
+  label: Jamba Large 1.7
+  provider: AI21 Labs
+  origin: Israel
+  tier: flagship
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 2.0e-06
+  completion_price_per_token: 8.0e-06
+- id: rekaai/reka-edge
+  label: Reka Edge
+  provider: Reka AI
+  origin: Other
+  tier: mid
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 1.0e-07
+- id: rekaai/reka-flash-3
+  label: Reka Flash 3
+  provider: Reka AI
+  origin: Other
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 1.0e-07
+  completion_price_per_token: 2.0e-07
+- id: liquid/lfm-2-24b-a2b
+  label: LFM2-24B-A2B
+  provider: Liquid AI
+  origin: Other
+  tier: small
+  default_active: false
+  notes: Candidate for expanded model pool; keep default_active false unless selected for a specific run.
+  prompt_price_per_token: 3.0e-08
+  completion_price_per_token: 1.2e-07

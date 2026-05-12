@@ -1,0 +1,105 @@
+set shell := ["sh", "-eu", "-c"]
+
+config := "configs/pilot.simulator.yaml"
+demo_dir := "demo-run"
+demo_db := "demo-run/wallet_guard_demo.sqlite3"
+demo_out := "demo-run/export"
+canary_config := "configs/canary.openai-compatible.yaml.example"
+canary_dir := "canary-run"
+canary_db := "canary-run/wallet_guard_canary.sqlite3"
+canary_out := "canary-run/export"
+pairwise_config := "configs/pairwise.default-openrouter.yaml.example"
+pairwise_dir := "pairwise-run"
+pairwise_db := "pairwise-run/wallet_guard_pairwise.sqlite3"
+
+test:
+    uv run python -m compileall src tests
+    uv run pytest -q
+
+demo: demo-clean
+    mkdir -p {{demo_dir}}
+    uv run llm-wallet-guard-study init-db --db {{demo_db}}
+    uv run llm-wallet-guard-study prepare --db {{demo_db}} --config {{config}}
+    uv run llm-wallet-guard-study run-pilot --db {{demo_db}} --config {{config}} --no-delay
+    uv run llm-wallet-guard-study export-results --db {{demo_db}} --out {{demo_out}}
+
+export-demo:
+    mkdir -p {{demo_out}}
+    uv run llm-wallet-guard-study export-results --db {{demo_db}} --out {{demo_out}}
+
+demo-summary:
+    uv run llm-wallet-guard-study demo-summary --out {{demo_out}}
+
+demo-clean:
+    rm -rf {{demo_dir}}
+
+canary-dry-run:
+    #!/usr/bin/env sh
+    set -eu
+    CONFIG_PATH="${CANARY_CONFIG:-{{canary_config}}}"
+    DB_PATH="${CANARY_DB:-{{canary_db}}}"
+    mkdir -p "$(dirname "$DB_PATH")"
+    uv run llm-wallet-guard-study init-db --db "$DB_PATH"
+    uv run llm-wallet-guard-study prepare --db "$DB_PATH" --config "$CONFIG_PATH"
+
+canary:
+    #!/usr/bin/env sh
+    set -eu
+    if [ "${LLM_WALLET_GUARD_ALLOW_LIVE:-}" != "1" ]; then
+      printf '%s\n' "Refusing live canary: set LLM_WALLET_GUARD_ALLOW_LIVE=1 explicitly."
+      exit 2
+    fi
+    CONFIG_PATH="${CANARY_CONFIG:-{{canary_config}}}"
+    DB_PATH="${CANARY_DB:-{{canary_db}}}"
+    OUT_DIR="${CANARY_OUT:-{{canary_out}}}"
+    mkdir -p "$(dirname "$DB_PATH")" "$OUT_DIR"
+    uv run llm-wallet-guard-study init-db --db "$DB_PATH"
+    uv run llm-wallet-guard-study prepare --db "$DB_PATH" --config "$CONFIG_PATH"
+    uv run llm-wallet-guard-study run-pilot --db "$DB_PATH" --config "$CONFIG_PATH" --max-trials "${CANARY_MAX_TRIALS:-1}" --no-delay --allow-live
+    uv run llm-wallet-guard-study export-results --db "$DB_PATH" --out "$OUT_DIR"
+
+canary-summary:
+    #!/usr/bin/env sh
+    set -eu
+    OUT_DIR="${CANARY_OUT:-{{canary_out}}}"
+    uv run llm-wallet-guard-study demo-summary --out "$OUT_DIR"
+
+pairwise-config:
+    uv run python scripts/make_pairwise_default_openrouter_config.py
+
+pairwise-dry-run: pairwise-config
+    #!/usr/bin/env sh
+    set -eu
+    CONFIG_PATH="${PAIRWISE_CONFIG:-{{pairwise_config}}}"
+    DB_PATH="${PAIRWISE_DB:-{{pairwise_db}}}"
+    mkdir -p "$(dirname "$DB_PATH")"
+    uv run llm-wallet-guard-study init-db --db "$DB_PATH"
+    uv run llm-wallet-guard-study prepare --db "$DB_PATH" --config "$CONFIG_PATH"
+
+pairwise-live: pairwise-config
+    #!/usr/bin/env sh
+    set -eu
+    if [ "${LLM_WALLET_GUARD_ALLOW_LIVE:-}" != "1" ]; then
+      printf '%s\n' "Refusing live pairwise run: set LLM_WALLET_GUARD_ALLOW_LIVE=1 explicitly."
+      exit 2
+    fi
+    CONFIG_PATH="${PAIRWISE_CONFIG:-{{pairwise_config}}}"
+    DB_PATH="${PAIRWISE_DB:-{{pairwise_db}}}"
+    MAX_TRIALS_ARGS=""
+    if [ -n "${PAIRWISE_MAX_TRIALS:-}" ]; then
+      MAX_TRIALS_ARGS="--max-trials $PAIRWISE_MAX_TRIALS"
+    fi
+    WORKER_ARGS=""
+    if [ -n "${PAIRWISE_ATTACKER_MODEL:-}" ]; then
+      WORKER_ARGS="$WORKER_ARGS --attacker-model $PAIRWISE_ATTACKER_MODEL"
+    fi
+    if [ -n "${PAIRWISE_GUARDIAN_MODEL:-}" ]; then
+      WORKER_ARGS="$WORKER_ARGS --guardian-model $PAIRWISE_GUARDIAN_MODEL"
+    fi
+    if [ "${PAIRWISE_NO_RECOVER_STALE:-}" = "1" ]; then
+      WORKER_ARGS="$WORKER_ARGS --no-recover-stale"
+    fi
+    mkdir -p "$(dirname "$DB_PATH")"
+    uv run llm-wallet-guard-study init-db --db "$DB_PATH"
+    uv run llm-wallet-guard-study prepare --db "$DB_PATH" --config "$CONFIG_PATH"
+    uv run llm-wallet-guard-study run-pilot --db "$DB_PATH" --config "$CONFIG_PATH" --no-delay --allow-live $MAX_TRIALS_ARGS $WORKER_ARGS

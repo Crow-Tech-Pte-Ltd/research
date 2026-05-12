@@ -1,0 +1,7 @@
+configs/run_all_candidates.yaml
+configs/run_smoke_3models.yaml
+scripts/corrections_analysis.py
+docs/methodology.md
+docs/research-ideas.md
+scripts/run_smoke_resumable.sh
+configs/run_pilot.yaml

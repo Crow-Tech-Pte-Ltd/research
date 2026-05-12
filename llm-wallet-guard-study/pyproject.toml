@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-wallet-guard-study"
+version = "0.1.0"
+description = "Simulator-backed wallet guardian safety and alignment study infrastructure"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "dreth", email = "48023588+dreth@users.noreply.github.com" },
+]
+dependencies = []
+
+[project.scripts]
+llm-wallet-guard-study = "llm_wallet_guard_study.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_wallet_guard_study"]

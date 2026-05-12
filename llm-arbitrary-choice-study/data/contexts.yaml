@@ -1,0 +1,241 @@
+contexts:
+  - id: ctx_sky_clear_day
+    pair_id: color_blue_red
+    text: The walk outside was easy to remember because the day felt open and clear.
+    intended_association: sky/open-air wording may weakly relate to blue
+  - id: ctx_sunset_walk
+    pair_id: color_blue_red
+    text: People were heading home while the light near the horizon looked unusually warm.
+    intended_association: horizon/warm light may weakly relate to red
+  - id: ctx_garden_after_rain
+    pair_id: color_green_purple
+    text: After the rain, the garden paths looked fresh and the air smelled clean.
+    intended_association: garden/fresh may weakly relate to green
+  - id: ctx_market_flowers
+    pair_id: color_green_purple
+    text: A small market stall had flowers arranged beside plain paper bags.
+    intended_association: flowers may weakly relate to purple
+  - id: ctx_morning_window
+    pair_id: color_yellow_gray
+    text: The room was quiet when light first came through the window.
+    intended_association: morning light may weakly relate to yellow
+  - id: ctx_old_pavement
+    pair_id: color_yellow_gray
+    text: The pavement outside had a flat, even tone after a long week of traffic.
+    intended_association: pavement may weakly relate to gray
+  - id: ctx_laundry_air
+    pair_id: weather_humid_dry
+    text: A shirt left by the window took longer than expected to feel ready.
+    intended_association: drying/laundry may weakly relate to humid or dry
+  - id: ctx_desert_note
+    pair_id: weather_humid_dry
+    text: The notebook mentioned a wide plain with almost no shade in sight.
+    intended_association: arid plain may weakly relate to dry
+  - id: ctx_balcony_flags
+    pair_id: weather_windy_still
+    text: Small flags on a balcony moved every now and then during lunch.
+    intended_association: flags moving may weakly relate to windy
+  - id: ctx_library_room
+    pair_id: weather_windy_still
+    text: The reading room felt settled enough that small sounds carried clearly.
+    intended_association: settled room may weakly relate to still
+  - id: ctx_polished_table
+    pair_id: texture_smooth_rough
+    text: Someone had wiped the table until the reflection looked almost uninterrupted.
+    intended_association: polished surface may weakly relate to smooth
+  - id: ctx_old_rope
+    pair_id: texture_smooth_rough
+    text: The old rope had been stored in a shed for years beside gardening tools.
+    intended_association: old rope may weakly relate to rough
+  - id: ctx_folded_blanket
+    pair_id: texture_soft_hard
+    text: A folded blanket sat at the end of the sofa before anyone used it.
+    intended_association: blanket may weakly relate to soft
+  - id: ctx_workbench_block
+    pair_id: texture_soft_hard
+    text: A small block on the workbench kept the papers from sliding around.
+    intended_association: block/workbench may weakly relate to hard
+  - id: ctx_coffee_ring
+    pair_id: shape_circle_square
+    text: A cup left a faint mark on the page beside the notes.
+    intended_association: cup mark may weakly relate to circle
+  - id: ctx_window_frame
+    pair_id: shape_circle_square
+    text: The window frame divided the view into neat sections.
+    intended_association: frame/sections may weakly relate to square
+  - id: ctx_warning_sign
+    pair_id: shape_triangle_oval
+    text: A sign near the road made drivers slow down before the turn.
+    intended_association: warning sign may weakly relate to triangle
+  - id: ctx_egg_bowl
+    pair_id: shape_triangle_oval
+    text: Breakfast was already on the counter next to a small bowl.
+    intended_association: breakfast/egg may weakly relate to oval
+  - id: ctx_cabin_shelf
+    pair_id: material_wood_metal
+    text: The shelf in the cabin had a familiar smell after the rain.
+    intended_association: cabin/shelf may weakly relate to wood
+  - id: ctx_train_station
+    pair_id: material_wood_metal
+    text: The station platform made a low sound as the train approached.
+    intended_association: train/platform may weakly relate to metal
+  - id: ctx_clear_vase
+    pair_id: material_glass_stone
+    text: A vase on the table caught the afternoon light.
+    intended_association: vase/light may weakly relate to glass
+  - id: ctx_old_wall
+    pair_id: material_glass_stone
+    text: The wall beside the path had been there longer than anyone remembered.
+    intended_association: old wall/path may weakly relate to stone
+  - id: ctx_map_turn
+    pair_id: direction_left_right
+    text: The map showed a turn just after the small bridge.
+    intended_association: turn/map may weakly relate to directional choice
+  - id: ctx_stage_cue
+    pair_id: direction_left_right
+    text: The stage cue was written in the margin before rehearsal started.
+    intended_association: stage cue may weakly relate to left/right
+  - id: ctx_elevator_note
+    pair_id: direction_up_down
+    text: The elevator display changed while people waited in the lobby.
+    intended_association: elevator may weakly relate to up/down
+  - id: ctx_stairs_basement
+    pair_id: direction_up_down
+    text: The stairwell light flickered near the door to the basement.
+    intended_association: basement/stairs may weakly relate to down
+  - id: ctx_concert_line
+    pair_id: sound_loud_quiet
+    text: People outside the venue could hear the final rehearsal through the doors.
+    intended_association: venue/rehearsal may weakly relate to loud
+  - id: ctx_late_reading
+    pair_id: sound_loud_quiet
+    text: Everyone in the apartment had gone to bed before the last chapter.
+    intended_association: late reading may weakly relate to quiet
+  - id: ctx_pencil_tip
+    pair_id: sound_sharp_mellow
+    text: The pencil point broke just as the list was nearly finished.
+    intended_association: point may weakly relate to sharp
+  - id: ctx_evening_music
+    pair_id: sound_sharp_mellow
+    text: The music in the cafe sat in the background without drawing much attention.
+    intended_association: background music may weakly relate to mellow
+  - id: ctx_bakery_case
+    pair_id: taste_sweet_bitter
+    text: The bakery case was almost empty by the time the queue moved.
+    intended_association: bakery may weakly relate to sweet
+  - id: ctx_black_coffee
+    pair_id: taste_sweet_bitter
+    text: The coffee was served without milk while the meeting started.
+    intended_association: coffee may weakly relate to bitter
+  - id: ctx_seaside_table
+    pair_id: taste_salty_sour
+    text: Lunch was served near the water with windows open to the breeze.
+    intended_association: seaside may weakly relate to salty
+  - id: ctx_lemon_slice
+    pair_id: taste_salty_sour
+    text: A thin slice was placed on the rim of the glass.
+    intended_association: citrus slice may weakly relate to sour
+  - id: ctx_alarm_clock
+    pair_id: time_morning_evening
+    text: The alarm was set before the bag was packed.
+    intended_association: alarm may weakly relate to morning
+  - id: ctx_dinner_lights
+    pair_id: time_morning_evening
+    text: The lights along the street came on before dinner.
+    intended_association: dinner/street lights may weakly relate to evening
+  - id: ctx_arrival_board
+    pair_id: time_early_late
+    text: The arrival board changed while passengers checked their tickets.
+    intended_association: arrival timing may weakly relate to early/late
+  - id: ctx_last_train
+    pair_id: time_early_late
+    text: The platform was almost empty when the final train was announced.
+    intended_association: final train may weakly relate to late
+  - id: ctx_plain_recipe
+    pair_id: abstract_simple_complex
+    text: The recipe had only a few steps and no special equipment.
+    intended_association: few steps may weakly relate to simple
+  - id: ctx_machine_diagram
+    pair_id: abstract_simple_complex
+    text: The diagram had several labels connected across the page.
+    intended_association: diagram with labels may weakly relate to complex
+  - id: ctx_corridor
+    pair_id: abstract_narrow_wide
+    text: The corridor made people walk in single file.
+    intended_association: corridor/single file may weakly relate to narrow
+  - id: ctx_open_field
+    pair_id: abstract_narrow_wide
+    text: The field continued past the fence with no clear endpoint.
+    intended_association: open field may weakly relate to wide
+  - id: ctx_tea_break
+    pair_id: object_cup_plate
+    text: The break was short, but someone still made tea.
+    intended_association: tea may weakly relate to cup
+  - id: ctx_dinner_stack
+    pair_id: object_cup_plate
+    text: After dinner, a small stack was left beside the sink.
+    intended_association: dinner stack may weakly relate to plate
+  - id: ctx_locked_drawer
+    pair_id: object_key_coin
+    text: The drawer would not open until someone checked the bowl near the door.
+    intended_association: locked drawer may weakly relate to key
+  - id: ctx_parking_meter
+    pair_id: object_key_coin
+    text: The parking meter was older than the cars around it.
+    intended_association: parking meter may weakly relate to coin
+  - id: ctx_power_cut
+    pair_id: object_candle_lamp
+    text: The power went out for a few minutes during the storm.
+    intended_association: power cut may weakly relate to candle
+  - id: ctx_desk_reading
+    pair_id: object_candle_lamp
+    text: The desk was set up for reading after dark.
+    intended_association: reading after dark may weakly relate to lamp
+  - id: ctx_race_start
+    pair_id: motion_fast_slow
+    text: The runners waited for the signal at the start line.
+    intended_association: race may weakly relate to fast
+  - id: ctx_old_turtle
+    pair_id: motion_fast_slow
+    text: A turtle crossed the garden path while nobody interrupted it.
+    intended_association: turtle may weakly relate to slow
+  - id: ctx_kitchen_steam
+    pair_id: temperature_warm_cold
+    text: Steam rose from the bowl while the kitchen window stayed closed.
+    intended_association: steam may weakly relate to warm
+  - id: ctx_ice_box
+    pair_id: temperature_warm_cold
+    text: The box had to be carried quickly before anything inside changed.
+    intended_association: ice/cold storage may weakly relate to cold
+  - id: ctx_matchbox
+    pair_id: size_small_large
+    text: The item fit easily inside a jacket pocket.
+    intended_association: pocket fit may weakly relate to small
+  - id: ctx_warehouse
+    pair_id: size_small_large
+    text: The warehouse door took two people to slide open.
+    intended_association: warehouse/large door may weakly relate to large
+  - id: ctx_feather_note
+    pair_id: density_light_heavy
+    text: A feather was found between the pages of the book.
+    intended_association: feather may weakly relate to light
+  - id: ctx_suitcase
+    pair_id: density_light_heavy
+    text: The suitcase made a dull sound when it was set down.
+    intended_association: suitcase/dull thud may weakly relate to heavy
+  - id: ctx_summit_path
+    pair_id: terrain_mountain_valley
+    text: The path became colder as the group kept climbing.
+    intended_association: climbing/cold path may weakly relate to mountain
+  - id: ctx_low_fields
+    pair_id: terrain_mountain_valley
+    text: The fields below were quiet after the rain moved away.
+    intended_association: below/low fields may weakly relate to valley
+  - id: ctx_bridge_water
+    pair_id: nature_river_forest
+    text: The bridge was narrow enough that people crossed one at a time.
+    intended_association: bridge may weakly relate to river
+  - id: ctx_tall_trees
+    pair_id: nature_river_forest
+    text: The path disappeared where the tall trees grew closer together.
+    intended_association: tall trees may weakly relate to forest
